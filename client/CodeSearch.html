@@ -1,0 +1,21 @@
+<head>
+  <title>CodeSearch</title>
+</head>
+
+<body>
+    <div class="container">
+
+      <div id="heading">
+          <h1 align = "center">Welcome to Code Search</h1>
+
+      </div>
+      {{> loginButtons}}
+      {{> searchBox }}
+
+      {{#if currentUser}}
+        <div id="heading">
+            {{> searchResult}}
+        </div>
+      {{/if}}
+    </div>
+  </body>
